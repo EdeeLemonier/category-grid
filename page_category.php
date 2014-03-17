@@ -31,8 +31,8 @@ remove_action( 'genesis_entry_content', 'genesis_do_post_content_nav', 12 );
 
 
 
-/**
- Code for custom loop */
+
+//* Code for custom loop 
 
 function
 
@@ -58,9 +58,8 @@ foreach( $categories as $category) {
 }
 
 
-/**
- Replace the standard loop with our custom loop - 
- props to Jonathan Perez of SureFire Web Services for this bit!*/
+//* Replace the standard loop with our custom loop - 
+//* Props to Jonathan Perez of SureFire Web Services for this bit!
 
 remove_action(
 'genesis_loop',
