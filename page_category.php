@@ -2,10 +2,6 @@
 
 //* Template Name: Category Template
 
-//* Reposition the entry meta in the entry header
-/*remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
-add_action( 'genesis_entry_header', 'genesis_do_post_title', 13 );*/
-
 //* Add Ambiance grid body class
 add_filter( 'body_class', 'ambiance_grid_body_class' );
 function ambiance_grid_body_class( $classes ) {
@@ -64,8 +60,7 @@ foreach( $categories as $category) {
 
 /**
  Replace the standard loop with our custom loop - 
- props to Jonathan Perez of SureFire Web Services for this bit!
- **/
+ props to Jonathan Perez of SureFire Web Services for this bit!*/
 
 remove_action(
 'genesis_loop',
